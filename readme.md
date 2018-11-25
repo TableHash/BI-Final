@@ -6,7 +6,7 @@
 
 &nbsp;&nbsp; As the P.E class monitor in our class and the member of the soccor team of our department, I am a soccor fan and I feel enthusiastic about data analysis in the sports fields.
  
-<center> ![](pic/181115-pic1.jpg) </center>
+ ![](pic/181115-pic1.jpg)
  
 &nbsp;&nbsp; *EPL* (English Premier League) is universally viewed as the best soccor league around the world. Several long-lasting soccor teams like Man United, Arsenal and Chelsea enjoy tremendous success both in the sports field and in the finanicial field. As a soccor fan, I do some analysis on the  results of all the games in the past 25 years and also make a small prediction.
 
@@ -31,7 +31,7 @@
 + &nbsp;&nbsp; There is no doubt that data acquisition comes first. In my last year of interdisciplinary project with students in *Economy and Management School*, I had a great harvest. During this period, when some data was needed, what came to my mind was usually the web crawler, whereas my partner would often turn to some famous databases like *Wind*.  **I must admit that turning to existing databases for help if possible is a nice and efficient way to fulfill the data acquisition.**
 
 
-<center>![](pic/181115-pic4.png)</center>
+ ![](pic/181115-pic4.png)
 
 + &nbsp;&nbsp; As for this project, I find a famous website *ESPN* helpful. It is widely regarded as "The Worldwide Leader in Sports", and I can download the dataset I need for free. Apart from that, I can also get access to other datasets concerning *FIFA World Cup*, *NBA* and so on.
 
@@ -65,7 +65,7 @@ import matplotlib.pyplot as plt
 + &nbsp;Then check whether the loading process is successful.
 + `print(epl_data.tail())`
 
-![](pic/181115-pic2.png)
+ ![](pic/181115-pic2.png)
 
 ---
 
@@ -87,7 +87,7 @@ epl_data['AwayScore']=np.select(conditions,away_scores)
 
 print(epl_data.tail())
 ```
-![](pic/181115-pic3.png)
+ ![](pic/181115-pic3.png)
 
 ---
 
@@ -103,7 +103,7 @@ no_draws = sort[sort.Winner.str.contains('Draw')==False].reset_index()
 most_wins= no_draws.groupby('Season').head(1)
 print(most_wins)
 ```
-<center> ![](pic/181115-pic5.png)</center>
+ ![](pic/181115-pic5.png)
 
 + Then I wonder which team appear most frequently on the list above and this time I do some operation on data visualization.
 
@@ -116,7 +116,7 @@ plt.show()
 
 ```
 
-![](pic/181115-result1)
+ ![](pic/181115-result1)
 
 ---
 
@@ -143,7 +143,7 @@ plt.show()
 + With the help of this picture, I can clearly figure out that only one team wins **32** times in one season and teams are most likely to win approximately **12** times in a season. 
 + It seems that there is a giant gap between **12** and **13**. As a soccor fan, I can immediately realize that this is because of the tremendous gap between *The Big Four* as well as other two 'Upstart' and other teams. These six teams are far richer than others and obviously have better performance with the help of the splendid players and coaches.
 
-<center>![](pic/181115-pic8.jpg)</center>
+![](pic/181115-pic8.jpg)
 
 ---
 
@@ -157,7 +157,7 @@ plt.show()
 print(epl_data["HomeTeam"].value_counts(dropna=False))
 ```
 
-<center>![](pic/181115-pic6.png)</center>
+![](pic/181115-pic6.png)
 
 + Firstly, it's the times that all the teams play as hometeams. The more the times, the longer thay stay in *Premier League*. Apparently, *Man United*, *Chelsea*, *Arsenal*,*Liverpool* which are named *The Big Four* are always staying in *Premier League*.
 
@@ -172,7 +172,7 @@ plt.show()
 
 + In the picture, the green column means winning, the yellow column means drawing and the blue column means failure. Obviously, *The Big Four*, especially *Man United* have dominating performance. 
 
-<center>![](pic/181115-pic7.jpg)</center>
+![](pic/181115-pic7.jpg)
 
 ---
 
@@ -241,7 +241,7 @@ plt.show()
 
 + 1999-2000 Season is a marvelous season in the picture but unfortunately their performance was not that satifying. However, 1998-1999, the last season was legendary because they won all the champions around Europe and was honored as '*The Treble*'. Especially, **1999 UEFA Champions League Final** couldn't be more dramatic and was always viewed as the most impressive game in Man United's history.
 
-<center>![](pic/181118-pic10.png)</center>
+![](pic/181118-pic10.png)
 
 + 2013-2014 Season is obviously a sad season. **Sir Ferguson** has just retired after his 27 years' manager work in Man United at the end of the last season. David Moyes took his place but unluckily that was the beginning of a sad story and from then on Man United got into trouble. 
 + 2014-2015 Season is another story. Van Gaal became the manager but still didn't get back to the dominating conditions. Two years later, one of the world's most famous coaches, *Mourinho*, came to Man United and worked as manager until now.
@@ -294,7 +294,7 @@ plt.show()
 
 + (*P.S: As the Half-Time data is missing in the first two years, we only use the data from 1995-2018.*
 
-<center>![](pic/181123-result1)</center>
+![](pic/181123-result1)
 
 + FTHG*(Full-Time HomeTeam Goal)* of Man United is the most relevant factor and it is easy to understand. The performance of half-game is also relevant. What impresses me most is that HTHG*(Half-Time HomeTeam Goal)* is also nice and significant. 
 
@@ -306,7 +306,7 @@ plt.show()
 
 + Then I feel interested in the cluster analysis on the performance of Man United. I think their half-game performance is not that relevant to the winning ratio so I choose these. Moreover, K-Means algorithm is used because of the familiarity. 
 
-<center>![](pic/181123-result2) </center>
+![](pic/181123-result2) 
 
 ---
 
@@ -331,7 +331,7 @@ plt.show()
 
 + It seems that Sir Ferguson will smile more happily. 
 
-<center>![](pic/181118-pic12.jpeg)</center>
+![](pic/181118-pic12.jpeg)
 
 ---
 
@@ -339,7 +339,7 @@ plt.show()
 
 + **[Berby](https://baike.baidu.com/item/%E5%BE%B7%E6%AF%94/10557508?fr=aladdin)** is always viewed as the most exciting part of soccor. Mixed with history resentment and the willing to pursue glory, teams will spare no effort to fight against each other. 
 
-<center>![](pic/181118-pic9.jpeg)</center>
+![](pic/181118-pic9.jpeg)
 
 + Man City is also based in Manchester. With the unbelievable investment from Asia, it has made incredible progress in the past decade and took part in Premier League. 
 
@@ -354,7 +354,7 @@ plt.title("Win Ratio Between Man United and Man City")
 plt.show()
 ```
 
-<center>![](pic/181118-result11)</center>
+![](pic/181118-result11)
 
 + Evidently, Man United seems more powerful, whereas in the recent 5 years, Man City was generally more succseeful than Man United at home and abroad.
 
@@ -381,7 +381,7 @@ plt.show()
 
 + Judging from the result of 2017-18 Season, I can figure out that when the value of smoothing parameter is **0.4**, I can get the most convincing result and I suppose in 2018-2019 Season Man United may win about 27 rounds. It seems that *Mourinho* will have a bright future in Man United.
 
-<center>![](pic/181118-pic13.jpg)</center>
+![](pic/181118-pic13.jpg)
 
 
 
@@ -405,6 +405,6 @@ plt.show()
 + When it comes to the [AiStudio](http://aistudio.baidu.com/), it's widely acknowledged that such a platform will possess a bright future, whereas recently it still has a long way to go. As for *[PaddlePaddle](http://www.paddlepaddle.org/)*, there is no denying that *[TensorFlow](https://tensorflow.google.cn/)* will be a competitive counterpart and nowadays its first thing to do should be to enhance its reliability so that ordinary users like us will not feel mad dealing with those bugs. Admittedly, coding is not that relaxing especially when the tools we use are imprefect themselves.
 + As for me, I feel curious about this Chinese platform and framework initially. However, it failed to meet my expection only when my classmates and I were trying to install the framework. Later, I made up my mind to only use *PaddlePaddle* online to fulfill my practice, during which I felt excited to help fix the bugs I found, but I also realized that it would spend much time. Consequently, I would prefer *[Kaggle](https://www.kaggle.com)* and *tenforflow* to *AiStudio* and *PaddlePaddle* for further study if time is limited.
 
-<center>![](pic/wechatgroup.png)</center>
+![](pic/wechatgroup.png)
 
 + Let us return to this final report. Words fail to impress my enthusiasm and excitement when seeing the requirement. We are offered the freedom to cope with the problem we are interested in. That will make us spontaneously do some research and learn about the required skills. As for my project, I finish the requirement of *descriptive analysis*, enhancing my ability of data analysis and data visualization. I practice *Python* programming with the help of libraries I have mentioned. I suppose I have finished the most appealing final project that I have ever had. 
